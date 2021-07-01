@@ -14,8 +14,8 @@ function firstQuestion(){
     
     $('.content').hide();
     Swal.fire({
-        title: 'Halo~',
-        text: 'Tao có điều này muốn hỏi mày nhớ phải trả lời thật lòng nha.',
+        title: 'Xin chào bạn',
+        text: 'Mình có điều nghiêm túc cần hỏi bạn, liệu hồn trả lời nhé =)).',
         imageUrl: 'img/cuteCat.jpg',
         imageWidth: 300,
         imageHeight: 300,
@@ -73,7 +73,7 @@ $('#no').click(() => {
 // generate text in input
 function textGenerate() {
     var n = "";
-    var text = " Tại vì tao đáng iêu hê ";
+    var text = " Tại vì tao nhảm nhí, vớ vẩn ";
     var a = Array.from(text);
     var textVal = $('#txtReason').val() ? $('#txtReason').val() : "";
     var count = textVal.length;
@@ -96,7 +96,7 @@ $('#yes').click(function() {
     var audio = new Audio('sound/tick.mp3');
     audio.play();
     Swal.fire({
-        title: 'Nói cho tao lí do mày thích tao được hem',
+        title: 'Nói cho tao lí do vì sao lại không quan tâm đi =((( chài ai buồn xỉu luôn á',
         html: true,
         width: 900,
         padding: '3em',
@@ -109,23 +109,23 @@ $('#yes').click(function() {
               no-repeat
             `,
         showCancelButton: true,
-        cancelButtonText: "Thôi ngại nắm",
+        cancelButtonText: "Thôi không quan tâm không trả lời",
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
         confirmButtonColor: '#fe8a71',
         cancelButtonColor: '#f6cd61',
-        confirmButtonText: 'Gửi cho tao á <3'
+        confirmButtonText: 'Ib gửi cho tao á ^^'
     }).then((result) => {
         if (result.value) {
             Swal.fire({
                 width: 900,
-                confirmButtonText: 'Kê luôn nha <3',
+                confirmButtonText: 'Rảnh thì call và quan tâm tao đi nào ^^',
                 background: '#fff url("img/iput-bg.jpg")',
-                title: 'Tao biết mà ^^ Yêu mày 300.000',
-                text: "Tao mò đi học code để làm mấy cái linh tinh này gửi mày á ^^ Mặc dù nó hơi bị sến nhiều chút nhưng chỉ là 1 cách tao bày tỏ tình cảm của mình với mày thôi. Tóm lại là, em yêu anh ^^. Còn chờ gì không ib cho tao đi ơ ơ",
+                title: 'Tao biết mà ^^',
+                text: "Tao không biết với mày thể hiện tình cảm và sự quan tâm như nào. Nhưng mà đôi khi ở mày cho tao cảm giác như tao không được yêu ^^ Mày nhớ tao tùng nói mn bảo mình giống bạn thân hơn không? Mn k thể nhận xét như thế được đâu, có trong mối quan hệ của mình đâu mà người ta biết, với cả còn chưa thấy mày với tao ở bên cạnh nhau nữa, sao nói vậy được. Chính tao có cảm giác đấy vậy thôi. Tao không biết là mày sẽ bận gì, nếu bận thì có thể nói với tao rõ ràng mà, đúng không? Tao sẽ chủ động hơn, sẽ không suy nghĩ lung tung nữa. Tao vốn dĩ là 1 người rất nhạy cảm với suy nghĩ nhiều, nên từ 1 thứ rất nhỏ tao có thể buồn chết mịa vì nó. Có nhiều lần tao thực sự muốn hỏi mày rằng: Đối với tao, mày có cảm xúc yêu đương thực sự không? Vì, tao thấy nó cứ mập mờ, không rõ ràng gì luôn cả. Mà đôi khi có nhiều chuyện, cứ để tao suy nghĩ nhiều, tao sẽ suy nghĩ không ra và làm nó rắc rối hơn mất. Nên tao phải làm trò vớ vẩn này thôi, tao cứ như này suốt là tao không nói mà đi luôn á ^^ Tao là con gái mà, đừng để tao chủ động mãi thế chứ, tình cảm là cả 2 cùng xây chứ mày để 1 mình tao xây thì làm sao mà nổi...",
                 confirmButtonColor: '#83d0c9',
                 onClose: () => {
-                    window.location = 'http://fb.com';
+                    window.location = 'https://www.facebook.com/messages/t/100010425017810';
                   }
             })
         }
